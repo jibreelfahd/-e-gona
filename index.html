@@ -5,6 +5,10 @@
     <title>Egona</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/dad41bef55.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
@@ -12,12 +16,171 @@
     <link rel="stylesheet" href="dict/styles.css" />
   </head>
   <body>
-    <div class="bgl">
-      <header class="flex">
-        <p class="text-white bg-pakistan_green">
+    <!--  banner-->
+    <div class="banner">
+      <div class="flex">
+        <p class="text-white w-4/5 mx-auto text-center py-3">
           Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
         </p>
-      </header>
+      </div>
     </div>
+    <div class="gbl-container">
+      <div class="w-0.5 text-white_smoke"></div>
+      <!--      Header section-->
+      <header class="flex justify-between items-center mt-4">
+        <a href="">
+          <img class="w-8" src="images/logo.svg" alt="" />
+        </a>
+        <nav class="flex gap-10 ml-32">
+          <a class="active negate-active" href="index.html">Home</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>
+          <a href="#">Sign up</a>
+        </nav>
+
+        <div class="flex gap-8">
+          <div
+            class="flex items-center gap-8 py-1.5 px-4 m-1.5 bg-white_smoke rounded-md"
+          >
+            <input
+              class="opacity-80 outline-none bg-white_smoke w-full"
+              type="search"
+              placeholder="What are you looking for?"
+            />
+            <i class="fa-brands fa-searchengin"></i>
+          </div>
+          <button>
+            <i class="fa-solid fa-cart-shopping color text-pakistan_green"></i>
+          </button>
+        </div>
+      </header>
+      <!--      Header section-->
+
+      <!--      line-->
+      <div class="h-0.5 w-full bg-white_smoke mt-4"></div>
+
+      <!--      Main-->
+      <main>
+        <!--        Hero section-->
+        <section class="flex gap-10 h-344 mt-8 items-start">
+          <ol class="flex gap-4 flex-col w-217 list-none">
+            <li class="flex gap-10">
+              <p>Legumes</p>
+              <button>
+                <i class="fa-thin fa-right fa-fade fa-xs text-white_smoke"></i>
+              </button>
+            </li>
+            <li>Livestock</li>
+            <li>Fruits</li>
+            <li>Tubers</li>
+            <li>Grains</li>
+            <li>Vegetables</li>
+            <li>Cash crops</li>
+          </ol>
+          <!--          line-->
+          <div class="h-344 w-0.5 bg-white_smoke"></div>
+
+          <!--          Slide show-->
+          <div class="w-892 bg-slate-600 h-344">
+            <div class="slideshow-container">
+              <div class="mySlides w-498 fade">
+                <div class="numbertext">1 / 6</div>
+                <div class="w-498 h-344">
+                  <img
+                    class="h-344 w-498"
+                    src="images/avocados-882635_640.jpg"
+                  />
+                </div>
+                <div class="text">Avocoados</div>
+              </div>
+
+              <div class="mySlides w-498 fade">
+                <div class="numbertext">2 / 6</div>
+                <div class="w-498 h-344">
+                  <img class="h-344 w-498" src="images/berries-2277_640.jpg" />
+                </div>
+                <div class="text">Berries</div>
+              </div>
+
+              <div class="mySlides w-498 fade">
+                <div class="numbertext">3 / 6</div>
+                <div class="w-498 h-344">
+                  <img class="h-344 w-498" src="images/sheep-4810513_640.jpg" />
+                </div>
+                <div class="text">Sheep</div>
+              </div>
+
+              <div class="mySlides w-498 fade">
+                <div class="numbertext">4 / 6</div>
+                <div class="w-498 h-344">
+                  <img
+                    class="h-344 w-498"
+                    src="images/chicken-4145198_640.jpg"
+                  />
+                </div>
+                <div class="text">Checking</div>
+              </div>
+
+              <div class="mySlides w-498 fade">
+                <div class="numbertext">5 / 6</div>
+                <div class="w-498 h-344">
+                  <img
+                    class="h-344 w-498"
+                    src="images/cabbage-3722517_640.jpg"
+                  />
+                </div>
+                <div class="text">Cabbage</div>
+              </div>
+
+              <div class="mySlides w-498 fade">
+                <div class="numbertext">6 / 6</div>
+                <div class="w-498 h-344">
+                  <img
+                    class="h-344 w-498"
+                    src="images/turkey-1071392_640.jpg"
+                  />
+                </div>
+                <div class="text">Turkey</div>
+              </div>
+              <br />
+
+              <div class="items-center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!--  Script-->
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
   </body>
 </html>
