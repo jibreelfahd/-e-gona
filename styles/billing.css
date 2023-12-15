@@ -1,0 +1,58 @@
+:root {
+   --primary-color: #60C55B;
+   --secondary-color: #fff;
+}
+
+#billing {
+   margin: 4rem 0;
+}
+
+#billing h1{
+   position: relative;
+   left: 21%;
+   font-size: 1.2rem;
+   font-weight: bold;
+   margin: 10px 0;
+}
+
+#billing .bill-section{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.bill-section .bill-info {
+   justify-self: center;
+}
+
+.bill-section .bill-info label {
+   font-size: 14px;
+   color: #444;
+}
+
+.bill-section .bill-info input {
+   background: #f4f4f4;
+   width: 100%;
+   padding: 5px;
+   border-radius: 3px;
+   margin-bottom: 10px;
+}
+
+.bill-section .bill-info input[type = 'checkbox'] {
+   width: auto;
+}
+
+.checkout .box{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.checkout .box p {
+   margin-right: 150px;
+   padding: 10px;
+}
+
+.checkout img {
+   width: 50px;
+   height: 40px;
+}

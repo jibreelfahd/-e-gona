@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>E-Gona | Checkout</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <script
+        src="https://kit.fontawesome.com/dad41bef55.js"
+        crossorigin="anonymous"
+      ></script>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./dict/styles.css" />
+      <link rel="stylesheet" href="./styles/billing.css">
+    </head>
+<body>
+   
+   <!-- HEADER -->
+   <div class="banner">
+      <div class="flex">
+        <p class="text-white w-4/5 mx-auto text-center py-3">
+          Register NOW And Get 50% OFF Puchase ON E-Gona. Don't Miss Out!!!
+        </p>
+      </div>
+   </div>
+   <div class="gbl-container">
+      <div class="w-0.5 text-white_smoke"></div>
+      <!--      Header section-->
+      <header class="flex justify-between items-center mt-4">
+         <a href="">
+            <img class="w-10" src="images/logo.svg" alt="" />
+         </a>
+         <nav class="flex gap-10 ml-32">
+            <a class="active-link negate-active" href="index.html">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Sign up</a>
+         </nav>
+
+         <div class="flex gap-8">
+            <div
+            class="flex items-center gap-8 py-1.5 px-4 m-1.5 bg-white_smoke rounded-md"
+            >
+               <input
+                  class="opacity-80 outline-none bg-white_smoke w-full"
+                  type="search"
+                  placeholder="What are you looking for?"
+               />
+               <i class="fa-brands fa-searchengin"></i>
+            </div>
+            <button>
+               <i class="fa-solid fa-cart-shopping color text-pakistan_green"></i>
+            </button>
+         </div>
+      </header>
+   </div>
+   <!--      Header section-->
+
+      <!--      line-->
+      <div class="h-0.5 w-full bg-white_smoke mt-4"></div>
+
+
+   <!-- CHECKOUT -->
+   <section id="billing">
+      <h1>Billing Details</h1>
+      <div class="bill-section">
+         <div class="bill-info">
+           <div>
+            <div><label for="name">Full Name</label></div>
+            <input type="text" name="name" placeholder="John Doe">
+           </div>
+           <div>
+            <div><label for="name">Street Address</label></div>
+            <input type="text" name="address"  placeholder="Old Airport">
+           </div>
+           <div>
+            <div><label for="name">Apartment Floor(optional)</label></div>
+            <input type="text" name="apartment" placeholder="3rd Floor">
+           </div>
+           <div>
+            <div><label for="name">Town/City</label></div>
+            <input type="text" name="town" placeholder="Jos City">
+           </div>
+           <div>
+            <div><label for="name">Phone Number</label></div>
+            <input type="text" name="number" placeholder="1234556789">
+           </div>
+           <div>
+            <div><label for="name">Email Address</label></div>
+            <input type="text" name="email" placeholder="johndoe@gmail.com">
+           </div>
+           <input type="checkbox" name="save"> Save this inormation for faster checkout next time
+         </div>
+
+         <div class="checkout">
+            <div class="box">
+               <img src="./images/corn-1515903_640.jpg" alt="">
+               <p>Corn</p>
+               <div><p>N1000</p></div>
+            </div>
+            
+            <div class="box">
+               <img src="./images/corn-1515903_640.jpg" alt="">
+               <p>Corn</p>
+               <div><p>N1000</p></div>
+            </div>
+            
+            <div class="box">
+               <p>Subtotal:</p>
+               <div><p>N1000</p></div>
+            </div>
+            
+            <div class="box">
+               <p>Shipping:</p>
+               <div><p>N1000</p></div>
+            </div>
+            
+            <div class="box">
+               <p>Total:</p>
+               <div><p>N1000</p></div>
+            </div>
+            
+            <div class="banks">
+               <input type="radio" name="bank" value="bank">Bank
+               <img src="" alt="">
+               <img src="" alt="">
+               <img src="" alt="">
+            </div>
+            <input type="radio" name="cash" value="cash">Cash
+            <a href="/" class="btnn">Place Order</a>
+         </div>
+      </div>
+   </section>
+
+   <!-- FOOTER -->
+   <footer class="bg-footer_color h-80 flex items-center content-center">
+      <div class="text-white font-body w-full flex justify-evenly">
+         <div class="">
+            <h1 class="pb-3 font-medium text-[20px]">Exclusive</h1>
+            <h2 class="pb-3 text-[15px]">Subscribe</h2>
+            <p class="pb-3 text-[13px]">Get 10% off your first order</p>
+            <div
+            class="flex items-center content-center gap-5 border-2 border-stone-50 rounded-md py-1 px-2"
+            >
+            <p class="text-[13px] text-slate-200">Enter your email</p>
+            <img src="images/icon-send.svg" alt="" />
+            </div>
+         </div>
+
+         <div class="w-60">
+            <h1 class="pb-3 font-medium text-[20px]">Support</h1>
+            <h2 class="pb-3 text-[15px]">
+            111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.
+            </h2>
+            <p class="pb-3 text-[13px]">exclusive@gmail.com</p>
+            <p class="pb-3 text-[13px]">+88015-88888-9999</p>
+         </div>
+
+         <div class="">
+            <h1 class="pb-3 font-medium text-[20px]">Account</h1>
+            <h2 class="pb-3 text-[15px]">My Account</h2>
+            <h2 class="pb-3 text-[15px]">Login / Register</h2>
+            <h2 class="pb-3 text-[15px]">Cart</h2>
+            <h2 class="pb-3 text-[15px]">Wishlist</h2>
+            <h2 class="pb-3 text-[15px]">Shop</h2>
+         </div>
+
+         <div class="">
+            <h1 class="pb-3 font-medium text-[20px]">Quick Link</h1>
+            <h2 class="pb-3 text-[15px]">Privacy Policy</h2>
+            <h2 class="pb-3 text-[15px]">Terms Of Use</h2>
+            <h2 class="pb-3 text-[15px]">FAQ</h2>
+            <h2 class="pb-3 text-[15px]">Contact</h2>
+         </div>
+
+         <div class="">
+            <h1 class="pb-3 font-medium text-[20px]">Download App</h1>
+            <h2 class="pb-3 text-[15px]">Save $3 with App New User Only</h2>
+            <div class="pb-3 flex gap-3 justify-start items-center">
+            <div>
+               <img src="images/Qrcode 1.png" alt="" />
+            </div>
+            <div>
+               <img class="mb-2" src="images/googleplay.png" alt="" />
+               <img src="images/appplay.png" alt="" />
+            </div>
+            </div>
+            <div class="flex gap-5">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <p class="flex justify-center items-center text-white bg-footer_color2">
+&copy Copyright Rimel 2023. All right reserved
+</p>
+</body>
+</html>
